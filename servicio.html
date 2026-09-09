@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/servicio.js" defer></script>
+    <title>Agenda Cita</title>
+</head>
+<body>
+<header>
+      <a href="index.html" class="logo-vet">
+        <img src="img/vet_logo.png" alt="Logo Veterinaria" >
+      </a>
+      <nav>
+        <ul class="menu">
+          <li> <a href="contacto.html">CONTÁCTANOS</a></li>
+          <li> <a href="servicio.html">AGENDA HORA</a></li>
+        </ul>
+      </nav>
+</header>
+<main>
+    <section>
+        <h2 id="textoCentrar">Agenda de Citas</h2>
+            <form id="formServicio">
+                <label for="nombreCuidador">Nombre Cuidador</label>
+                <input type="text" id="nombreCuidador" required>
+
+                <label for="correoCliente">Correo Electronico</label>
+                <input type="email" id="correoCliente" required>
+
+                <label for="telefonoCliente">Numero Telefonico</label>
+                <input type="number" id="telefonoCliente" required>
+
+                <label for="nombreMascota">Nombre Mascota</label> 
+                <input type="text" id="nombreMascota" required>
+
+                <label for="edadMascota">Edad de Mascota</label>
+                <input type="number" id="edadMascota" required>
+
+                <label for="consultaCliente">Consulta</label>
+                    <select id="consultaCliente">
+                        <option value="">Seleccionar</option>
+                        <option>Vacunacion</option>
+                        <option>Operacion</option>
+                        <option>Chequeo</option>
+                        <option>Desinfectacion</option>
+                        <option>Otro</option>
+                    </select>
+                <label for="fechaCita">Fecha de Cita</label>
+                <input type="date" id="fechaCita" min="2026-09-08">
+
+                <label for="motivoCita">Motivo (opcional)</label>
+                <textarea id="motivoCita" rows="5"></textarea>
+
+                <button type="submit">Agendar Cita</button>
+                <p id="confirmarAgenda"></p>
+            </form>
+    </section>
+
+    <section class="servicio-precios">
+        <h3 id="textoCentrar">Servicios y Precios<h3>
+        <img src="img/tabla_servicios.png" alt="Tabla de Servicios y Precios" class="tabla_servicios">
+    </section>
+</main>
+<footer>
+  <section class="contactos-footer">
+    <article class="contacto">
+      <h3>Correo electronico</h3>
+      <p>vet.sanmarcos@veterniariasm.cl</p>
+    </article>
+
+    <article class="contacto">
+      <h3>Dirección</h3>
+      <p>Rancagua, Región del Libertador General Bernardo O'Higgins</p>
+    </article>
+
+    <article class="contacto">
+      <h3>Horario</h3>
+      <p>Lunes a Viernes de 09:00 a 20:00 hrs.</p>
+      <p>Sabado a Domingo de 11:00 a 17:00 hrs.</p>
+    </article>
+  </section>
+</footer>
+</body>
+</html>
