@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/funciones.js" defer></script>
+    <title>Contacto</title>
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo-vet">
+    <img src="img/vet_logo.png" alt="Logo Veterinaria">
+  </a>
+  <nav>
+    <ul class="menu">
+      <li> <a href="contacto.html">CONTÁCTANOS</a></li>
+      <li> <a href="servicio.html">AGENDA HORA</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2 style="text-align: center;">Contacto</h2>
+  <p class="sub" style="text-align: center;">Ingresa tus datos y motivo de comunicación</p>
+
+  <form id="form-contacto" >
+    <div class="campo">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" class="cuadro" required>
+    </div>
+
+    <div class="campo">
+    <label for="correo">Correo</label>
+    <input type="email" id="correo" class="cuadro" required>
+    </div>
+
+    <div class="campo">
+    <label for="telefono">Teléfono</label>
+    <input type="tel" id="telefono" class="cuadro" required>
+    </div>
+
+    <div class="campo">
+    <label for="motivo-consulta">Motivo de la consulta</label>
+    <select id="motivo-consulta" class="cuadro" required>
+      <option value="">Selecciona una opción</option>
+      <option>Consulta general</option>
+      <option>Reclamo</option>
+      <option>Otro</option>
+    </select>
+    </div>
+
+    <div class="campo">
+    <label for="mensaje">Mensaje (opcional)</label>
+    <textarea id="mensaje" rows="2" class="cuadro"></textarea>
+    </div>
+
+    <button type="submit">Enviar datos</button>
+    <p id="mensaje-confirmacion"></p>
+  </form>
+</main>
+
+<footer>
+  <section class="contactos-footer">
+    <article class="contacto">
+      <h3>Correo electronico</h3>
+      <p>vet.sanmarcos@veterniariasm.cl</p>
+    </article>
+
+    <article class="contacto">
+      <h3>Dirección</h3>
+      <p>Rancagua, Región del Libertador General Bernardo O'Higgins</p>
+    </article>
+
+    <article class="contacto">
+      <h3>Horario</h3>
+      <p>Lunes a Viernes de 09:00 a 20:00 hrs.</p>
+      <p>Sabado a Domingo de 11:00 a 17:00 hrs.</p>
+    </article>
+  </section>
+</footer>
+</body>
+</html>
