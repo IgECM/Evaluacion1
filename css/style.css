@@ -1,0 +1,195 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    background: gainsboro;
+    
+}
+
+header  {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  border-bottom: 3px solid #8F8C8C;
+  height: 80px;
+}
+
+.menu {
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
+
+.menu a {
+    color: #5d1675;
+    font-family: system-ui, -apple-system, sans-serif;
+    text-decoration: none;
+    padding-right: 15px;
+    margin-right: 30px;
+    border-right: 5px solid #8F8C8C;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.titulo-vet{
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    background-image: url('/img/perros y gatos index.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 100px;
+    -webkit-text-stroke: 3px black;
+        
+
+}
+
+.logo-vet img {
+    max-height: 150px;
+    margin-right: 30px;
+}
+
+
+
+/*Estilo index*/
+
+
+
+.sobre-nosotros {
+    background-color: rgb(170, 167, 167);
+    color: #2b2b2b;
+    max-width: 40rem;
+    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 10px;
+    border-radius: 12px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.sobre-nosotros h2 {
+    margin: 0;
+}
+
+/*Estilo formulario*/
+.campo-error {
+  border: 2px solid #a3242f;
+  background: #fbe9ea;
+}
+
+/*Formulario de contacto*/
+#form-contacto {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgb(174, 169, 177);
+  border-radius: 8px;
+  margin-bottom: 25px;
+  gap: 5px;
+}
+
+/*Formulario de citas*/
+#formServicio {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgb(174, 169, 177);
+  border-radius: 8px;
+  gap: 5px;
+}
+
+.tabla_servicios {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(174, 169, 177);
+    border-radius: 8px;
+    gap: 5px;
+}
+
+.servicio-precios {
+    background-color: #8d8f92;
+    font-size: 30px;
+    padding: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-style: oblique;
+    border-radius: 12px;
+}
+#textoCentrar {
+    text-align: center;
+}
+
+.cuadro {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+}
+
+
+.control-formulario {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+select.control-formulario {
+  height: auto;
+  min-height: 80px;
+}
+
+select.control-formulario option {
+  padding: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+/*Footer*/
+
+.contactos-footer {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: white;
+    margin-top: auto;
+    background: gray;
+}
